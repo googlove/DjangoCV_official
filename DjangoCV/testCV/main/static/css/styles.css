@@ -1,0 +1,193 @@
+body{
+    background-color: white;
+    font-family: 'Source Code Pro';
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  .sidebar-image{
+      width: 100%;
+      height: 30%;
+  }
+  
+  .sidebar-image img{
+      width: 90%;
+      height: 100%;
+      border-radius: 30px;
+      margin: 10px;
+  }
+
+  .sidebar-main-text{
+    width: 100%;
+    height: 2%;
+  }
+  .sidebar-main-text h2{
+      color: aliceblue;
+      text-align: center;
+  }
+.sidebar-main-text2{
+  width: 100%;
+  height: 10%;
+}
+  .sidebar-main-text2 h6{
+    font-size: 20px;
+    color: #CFCDCC;
+    text-align: center;
+  }
+
+  .sidebar-main-interest a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  .sidebar-main-interest-text{
+    width: 100%;
+    height: 10%;
+  }
+
+  .sidebar-main-interest-button{
+    margin: 40px;
+    width: 10%;
+    height: 10%;
+  }
+  .btn{
+    border-radius: 5px;
+    background-color: gray;
+  }
+  .main-info {
+    width: 59%;
+    height: 10%;
+  }
+
+  .main-info a{
+    color: white;
+    text-align: center;
+  }
+
+  .btn a{
+    text-align: center;
+    color: #00bcd4;
+    font-size: 15px;
+  }
+
+  .sidebar-main-interest-text h3{
+      font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+  }
+  /* Стиль основного содержания */
+  .content {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  .content-main-text h3{
+      font-size: 30px;
+      color: green;
+  }
+
+ .content-main-experience h3{
+    font-size: 25px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height:60px;
+    background-color: black;
+    text-align: center;
+  }
+
+  .footer a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+  }
+
+
+
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Три колонки макет */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Разместить текст справа */
+  .right {
+    text-align: right;
+  }
+  
+  /* Очистить поплавки после столбцов */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Бар контейнер */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Индивидуальные бары */
+  .bar-5 {width: 40%; height: 18px; background-color: #4CAF50;}
+  .bar-4 {width: 75%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 75%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 55%; height: 18px; background-color: #f44336;}
+  
+  /* Адаптивный макет - заставьте столбцы складываться друг на друга, а не рядом друг с другом */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Скрыть правую колонку на маленьких экранах */
+    .right {
+      display: none;
+    }
+  }
+  
+  /* Добавить медиа запросы для небольших экранов (когда высота экрана меньше 450px, добавьте меньшие отступы и размер шрифта) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
